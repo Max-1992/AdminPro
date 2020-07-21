@@ -1,21 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProgressComponent } from './progress.component';
+import { AccountSettingsComponent } from './account-settings.component';
 
-
-describe('ProgressComponent', () => {
-  let component: ProgressComponent;
-  let fixture: ComponentFixture<ProgressComponent>;
+describe('AccountSettingsComponent', () => {
+  let component: AccountSettingsComponent;
+  let fixture: ComponentFixture<AccountSettingsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProgressComponent ]
+      declarations: [ AccountSettingsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProgressComponent);
+    fixture = TestBed.createComponent(AccountSettingsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

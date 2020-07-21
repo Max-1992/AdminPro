@@ -1,1 +1,81 @@
-<p>graficas works!</p>
+<!-- ============================================================= -->
+<!-- Box Charts  -->
+<!-- ============================================================= -->
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+                
+                <h4 class="card-title"> {{charts.chart1.leyenda }} </h4>
+
+                <!-- CHART PIE -->
+                    <app-chartpie
+                        [pieChartLabels]="charts.chart1.labels" 
+                        [pieChartData]="charts.chart1.data" 
+                        [pieChartType]="charts.chart1.type">
+                    </app-chartpie>
+                <!-- /CHART PIE -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title"> {{charts.chart2.leyenda }} </h4>
+
+                 <!-- CHART PIE -->
+                    <app-chartpie
+                        [pieChartLabels]="charts.chart2.labels" 
+                        [pieChartData]="charts.chart2.data" 
+                        [pieChartType]="charts.chart2.type">
+                    </app-chartpie>
+                <!-- /CHART PIE -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title"> {{charts.chart3.leyenda }} </h4>
+                
+                <!-- CHART PIE -->
+                    <app-chartpie
+                        [pieChartLabels]="charts.chart3.labels" 
+                        [pieChartData]="charts.chart3.data" 
+                        [pieChartType]="charts.chart3.type">
+                    </app-chartpie>
+                <!-- /CHART PIE -->
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="card-title"> {{charts.chart4.leyenda }} </h4>
+
+                 <!-- CHART PIE -->
+                    <app-chartpie
+                        [pieChartLabels]="charts.chart4.labels" 
+                        [pieChartData]="charts.chart4.data" 
+                        [pieChartType]="charts.chart4.type">
+                    </app-chartpie>
+                <!-- /CHART PIE -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ============================================================= -->
+<!-- Box Charts  -->
+<!-- ============================================================= -->
