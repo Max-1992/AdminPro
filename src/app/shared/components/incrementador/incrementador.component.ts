@@ -15,7 +15,7 @@ export class IncrementadorComponent implements OnInit {
   @Output() progressCurrent: EventEmitter<number> = new EventEmitter();
 
   // Select Elments the DOM
-  @ViewChild('progressIput', {static: false}) elementInputProgress: ElementRef;
+  @ViewChild('progressIput') elementInputProgress: ElementRef;
 
   constructor() { };
 
