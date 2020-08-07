@@ -8,16 +8,11 @@ import { AppRoutingModule } from './app-routing.module';
 
 // Camponents
 import { AppComponent } from './app.component';
-import { NotfoundComponent } from './notfound/notfound.component';
-
-
-
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotfoundComponent,
   ],
   imports: [
     BrowserModule,

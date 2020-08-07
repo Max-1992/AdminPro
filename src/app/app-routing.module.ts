@@ -2,27 +2,20 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 
-// Components
-import { NotfoundComponent } from './notfound/notfound.component';
-
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () => import('./auth/auth.module').then( m => m.AuthModule ),
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
   {
-    path: '',
+    path: 'panel',
     loadChildren: () => import('./pages/pages.module').then( m => m.PagesModule )
   },
-  {
-     path: '', 
-     pathMatch: 'full', 
-     redirectTo: 'panel' 
+  { 
+    path: '', redirectTo: 'auth', pathMatch: 'full' 
   },
-  { path: '**', 
-    component: NotfoundComponent 
-  },
+
 ];
 
 @NgModule({

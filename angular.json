@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "adminProHospital"
+    }
+  },
+  "defaultProject": "adminProHospital",
+  "cli": {
+    "analytics": "278442f5-2d0f-41ed-bd3b-c60564001911"
+  }
 }

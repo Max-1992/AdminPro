@@ -16,7 +16,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 
 const routes: Routes = [
   {
-    path: 'panel',
+    path: '',
     component: LayoutComponent,
     children: [
       { path: '', component: DashboardComponent, data: { title: 'Panel Administrativo' } },
@@ -25,6 +25,7 @@ const routes: Routes = [
       { path: 'account', component: AccountSettingsComponent, data: { title: 'Ajustes del tema' } },
       { path: 'promises', component: PromisesComponent, data: { title: 'Promesas' } },
       { path: 'rxjs', component: RxjsComponent, data: { title: 'Rxjs' } },
+      { path: '**', redirectTo: '', pathMatch: 'full' }
     ]
   }
 ];
