@@ -1,7 +1,7 @@
 // Native Angular
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Routing
 import { PagesRoutingModule } from './pages-routing.module';
@@ -17,6 +17,7 @@ import { GraficasComponent } from './graficas/graficas.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromisesComponent } from './promises/promises.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { ProfileComponent } from './profile/profile/profile.component';
 
 
 @NgModule({
@@ -28,12 +29,14 @@ import { RxjsComponent } from './rxjs/rxjs.component';
     AccountSettingsComponent,
     PromisesComponent,
     RxjsComponent,
+    ProfileComponent,
   ],
   imports: [
     CommonModule,
     PagesRoutingModule,
     ShearedModule,
     FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }

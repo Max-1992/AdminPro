@@ -1,6 +1,7 @@
 // Native Angular
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 // Routing
 import { AuthRoutingModule } from './auth-routing.module';
@@ -9,17 +10,21 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ResetComponent } from './reset/reset.component';
+import { GoogleLoginComponent } from './google-login/google-login.component';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
     SignupComponent,
-    ResetComponent
+    ResetComponent,
+    GoogleLoginComponent
   ],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class AuthModule { }

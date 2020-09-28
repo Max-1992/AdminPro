@@ -13,6 +13,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
 import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 import { ChartppieChartDataieComponent } from './components/chartpie/chartpie.component';
+import { Images } from './pipes/images.pipe';
 
 
 
@@ -20,13 +21,13 @@ import { ChartppieChartDataieComponent } from './components/chartpie/chartpie.co
 
 
 @NgModule({
-  declarations: [HeaderComponent, SidebarComponent, BreadcrumbsComponent, IncrementadorComponent, ChartppieChartDataieComponent],
+  declarations: [HeaderComponent, SidebarComponent, BreadcrumbsComponent, IncrementadorComponent, ChartppieChartDataieComponent, Images],
   imports: [
     CommonModule,
     RouterModule,
     FormsModule,
     ChartsModule
   ],
-  exports: [HeaderComponent, SidebarComponent, BreadcrumbsComponent, IncrementadorComponent, ChartppieChartDataieComponent]
+  exports: [HeaderComponent, SidebarComponent, BreadcrumbsComponent, IncrementadorComponent, ChartppieChartDataieComponent, Images]
 })
 export class ShearedModule { }
